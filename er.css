@@ -52,11 +52,13 @@
     flex-direction: column;
     width : 50%;
     min-height : 70%;
+    max-height : 95%;
     transform: translate(-50%, -45%);
     left : 50%;
     top : 45%;
     background-color : rgba(0, 0, 0, 0.5);
-    border-radius: 3px;
+    border-radius : 3px;
+    overflow-y : auto;
 }
 
 #aboutTitle {
@@ -93,6 +95,7 @@
     border-radius: 50%;
     display: inline-block;
     mix-blend-mode : lighten;
+    overflow : hidden;
 }
 
 @keyframes first {
@@ -161,8 +164,8 @@
     filter: blur(35px);
 }
 
-/* Body styling */
+ /* Body styling */
 body {
     background-color : black;
-    overflow: hidden;
+    overflow : hidden;
 }
