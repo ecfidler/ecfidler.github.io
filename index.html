@@ -27,7 +27,7 @@
   </head>
 
   <body onload="lastModified()">
-      
+    
     <span class="dot centerfold blur-me" id ="circle1"></span>
     <span class="dot blur-me" id ="circle3"></span>
     <span class="dot blur-me" id ="circle2"></span>
@@ -72,18 +72,14 @@
 
         <h4 class="section-sublabel">The state of the site</h4>
         <ul class="section-list">
-          <li class="section-item"><p>This site is currently under construction, check back later (by the end of the day Thurs (9/10) at the latest) and you'll see all of these areas filled in</p></li>
+          <li class="section-item"><p>This site is currently under construction, all of the pages except for Links, about and Main should be finalized</p></li>
         </ul>
 
         <h4 class="section-sublabel">Todo / Outline</h4>
         <ul class="section-list">
-          <li class="section-item"><p>Employment: add raymond information.</p></li>
-          <li class="section-item"><p>Resume: add a link to my resume, direct download?</p></li>
           <li class="section-item"><p>Links: add links to all of my worksafe socials.</p></li>
           <li class="section-item"><p>About: write about myself outside of work.</p></li>
           <li class="section-item"><p>Home: make this page an introduction, avatar.</p></li>
-          <li class="section-item"><p>Sidebar: Add titles to all of the links?</p></li>
-          <li class="section-item"><p>Etc: update favicons, cmyk color mode?</p></li>
         </ul>
         
         <p id="last-label"></p>
@@ -94,7 +90,7 @@
       <div class="box main-box" id="employment">
         <h3 class="section-label">Employment</h3>
         <hr class="section-divider">
-        <h4 class="section-sublabel"><a href="https://www.raymondcorp.com/" title="Visit Raymond's website!">The Raymond Corperation</a></h4>
+        <h4 class="section-sublabel"><a href="https://www.raymondcorp.com/" target="_blank" title="Visit Raymond's website!">The Raymond Corperation</a></h4>
         <ul class="section-list">
           <li class="section-item"><p> Software Development: Internal Tools Co-Op in Greene, NY</p></li>
           <li class="section-item"><p>I worked on unit testing on a large C codebase  using VectorCAST/C.</p></li>
@@ -110,7 +106,7 @@
         <h3 class="section-label">Projects</h3>
         <hr class="section-divider">
 
-        <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" title="link to the project on my github">Discord.py Bot</a></h4>
+        <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" target="_blank" title="link to the project on my github">Discord.py Bot</a></h4>
         <ul class="section-list">
           <li class="section-item"><p>I wrote and maintain a discord bot for a server of 250+ members.</p></li>
           <li class="section-item"><p>It is written using the discord.py library and I utilized multiple other api libraries </p></li>
@@ -120,7 +116,7 @@
           <li class="section-item"><p>A command that uses Reddit scraper to retrive, format, and send a random post from the specified subreddit.</p></li>
         </ul>
 
-        <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" title="link to the project on my github">fidl.dev</a></h4>
+        <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" target="_blank" title="link to the project on my github">fidl.dev</a></h4>
         <ul class="section-list">
           <li class="section-item"><p>I personally designed and developed this website from scratch using HTML, CSS and just a touch of JavaScript</p></li>
           <li class="section-item"><p>I will continuously be using it as a portfolio, showcasing any more projects that I work on and any Employments I hold in the future.</p></li>
@@ -138,16 +134,13 @@
       <div class="box main-box" id="resume">
         <h3 class="section-label">Resume</h3>
         <hr class="section-divider">
-
-        <h4 class="section-sublabel">Download</h4>
-        <ul class="section-list">
-          <li class="section-item"><p>Download it <a href="https://drive.google.com/file/d/1EcGzWC6mLJJkVEnpCEabd5az8_VnN5Kl/view?usp=sharing">here!</a></p></li>
-          <li class="section-item"><p>Resume last modified September 2, 2020.</p></li>
-        </ul>
+        <br>
         
+        <iframe src="files/Ethan_Fidler_resume.pdf" style="width: 95%; height: 60vw; margin-left: 2.5%;"></iframe>
+
       </div>
 
-      <!-- Projects -->
+      <!-- Links -->
       <div class="box main-box" id="links">
         <h3 class="section-label">Links</h3>
         <hr class="section-divider">
@@ -160,7 +153,7 @@
         
       </div>
 
-      <!-- Projects -->
+      <!-- About -->
       <div class="box main-box" id="about">
         <h3 class="section-label">About Me</h3>
         <hr class="section-divider">
@@ -174,6 +167,12 @@
       </div>
 
     </div>
+
+    <footer>
+      <div class = "noitseuq-div">
+        <h1 class ="mystery dark" title="colorful!" onclick=invert()>¿</h1>
+      </div>
+    </footer>
 
   </div>
   </body>

@@ -142,7 +142,6 @@ a:hover {
     min-height : 70vh;
     max-height: 70vh;
     overflow-y : auto;
-    padding-bottom : .5vh;
 }
 
 .box {    
@@ -202,7 +201,15 @@ a:hover {
 /* Keep from here on! */
 .question-div { 
     position : fixed;
-    top : -1vw;
+    top : 0vw;
+    left : 1vw;
+    width : 5%;
+    padding : 10px;
+}
+
+.noitseuq-div { 
+    position : absolute;
+    bottom : 0vh;
     left : 1vw;
     width : 5%;
     padding : 10px;
