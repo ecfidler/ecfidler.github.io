@@ -1,92 +1,217 @@
-*{
-    margin: 10px;
+* {
+    /*margin: 10px; */
     padding: 0;
 }
-/* Main Name & dark mode */
 
-.main {
+p {
     font-family : 'arial';
-    font-style: normal;
-    text-align : center;
-    font-size : 75px;
-    padding-bottom : -20px;
+    font-size : 20px;
+    color : whitesmoke;
+
+    margin-top : 0.25vh;
+    margin-bottom : 0.25vh;
 }
+
+a {
+    color : whitesmoke;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+/* New Classes for 2020 Branch */
+
+#head-elements {
+    width : 60vw;
+    margin : auto;
+    padding-top : 2vw;
+}
+
+#body-elements {
+    width : 60vw;
+    margin : auto;
+    padding-top : 10.5vw;
+}
+
+#avatar-box {
+    position : relative;
+    float : left;
+    width : 10vw;
+    height : 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar {
+    height : 8vw;
+    width : 8vw;
+    border-radius: .25vw;
+}
+
+#title-box {
+    position : relative;
+    float : right;
+    width : 49.5vw;
+    height : 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#title-label {
+    font-family : 'arial';
+    font-size : 8vw;
+    color : whitesmoke;
+    margin-top : 0;
+    margin-bottom : 0;
+}
+
+#menu-box {
+    position : relative;
+    float : left;
+    width : 10vw;
+    min-height : 70vh;
+}
+
+#menu-list {
+    color : whitesmoke;
+}
+
+.menu-text {
+    font-size : 1.3vw;
+}
+
+.menu-item {
+    margin-left : 1.5vw;
+    margin-bottom : .5vw;
+    cursor : pointer;
+}
+
+.menu-item:hover {
+    /*font-style : italic;*/
+    text-decoration: underline;
+}
+
+/* Styles for the Main Body area */
+
+.section-list {
+    color : whitesmoke;
+}
+
+.section-item {
+    margin-left : 3vw;
+    margin-top : 0.5vh;
+    margin-bottom : 0.5vh;
+    margin-right : 1.5vw;
+    font-size: 1vw;
+}
+
+.section-label {
+    font-family : 'arial';
+    font-size : 3vw;
+    color : whitesmoke;
+    padding-top : 1vw;
+    padding-bottom : .5vw;
+    padding-left : 1.5vw;
+    margin-top : 0;
+    margin-bottom : 0;
+}
+
+.section-sublabel {
+    font-family : 'arial';
+    font-size : 2vw;
+    color : whitesmoke;
+    padding-top : 0;
+    padding-bottom : 0;
+    padding-left : 2vw;
+    margin-top : 0;
+    margin-bottom : 0;
+}
+
+.section-divider {
+    width : 46.5vw;
+    color : whitesmoke;
+}
+
+.main-box {
+    position : relative;
+    float : right;
+    width : 49.5vw;
+    min-height : 70vh;
+    max-height: 70vh;
+    overflow-y : auto;
+    padding-bottom : .5vh;
+}
+
+.box {    
+    background-color : rgba(0, 0, 0, 0.5);
+    border-radius : .25vw;
+}
+
+/* Ids for Main Body options */
+
+#home {
+    display : none;
+}
+
+#employment {
+    display : none;
+}
+
+#projects {
+    display : initial;
+}
+
+#resume {
+    display : none;
+}
+
+#links {
+    display : none;
+}
+
+#about {
+    display : none;
+}
+
+/* Old Code */
+/* Main Name & dark mode */
 
 .name:hover {
     font-style: italic;
 }
 
 .dark {
-    color: whitesmoke
-}
-
-#menuBar {
-    font-family : 'arial';
-    font-size : 25px;
-    opacity : 0;
-    transition: .8s;
-    position : relative;
-    top : 10px;
     color: whitesmoke;
-    text-align : center;
-    padding-top : 0px;
-
 }
 
 .centerfold {
-    position : absolute;
+
     left : 50%;
     top : 45%;
     transform: translate(-50%, -45%);
     padding-bottom : 1px;
 }
 
-.centerfold:hover #menuBar {
-    opacity : 1;
-    top : -20px;
-}
-
-.aboutMain {
-    position : absolute;
-    display: flex;
-    flex-direction: column;
-    width : 50%;
-    min-height : 70%;
-    max-height : 95%;
-    transform: translate(-50%, -45%);
-    left : 50%;
-    top : 45%;
-    background-color : rgba(0, 0, 0, 0.5);
-    border-radius : 3px;
-    overflow-y : auto;
-}
-
-#aboutTitle {
-    text-align : left;
-    padding-left: 2.5%
-}
-
-#aboutList {
-    padding-left: 2.5%
-}
-
-.aboutBody {
-    font-family : 'arial';
-    font-size : 20px;
-    color : whitesmoke;
-}
-
-.darkDiv {
+/* Keep from here on! */
+.question-div { 
     position : fixed;
-    top : 1px;
-    left : 5px;
+    top : -1vw;
+    left : 1vw;
     width : 5%;
+    padding : 10px;
 }
 
-.darkstar {
+.mystery {
     font-size : 50px;
     font-family : 'arial';
     cursor : pointer;
+}
+
+.mystery:hover {
+    font-style: italic;
 }
 
 /* magic circles */
@@ -99,48 +224,38 @@
 }
 
 @keyframes first {
-    from {top : 25%}
-    to {top : 75%}
+    from {top : 25vh}
+    to {top : 75vh}
     /* transform: translate3d(42px, -62px, 0px); */
 }
 
 @keyframes second {
-    from {left : 15% ; top : 20%;}
-    to {left : 75% ; top : 50%;}
+    from {left : 15vw ; top : 20vh;}
+    to {left : 75vw ; top : 50vh;}
     /* transform: translate3d(42px, -62px, 0px); */
 }
 
 @keyframes third {
-    from {top : -50%; left : -50%}
-    to {top : 50%; left : -10%}
+    from {top : -50vh; left : -50vw}
+    to {top : 50vh; left : -10vw}
     /* transform: translate3d(42px, -62px, 0px); */
 }
 
 #circle1 {
-    top : 75%;
-    right: 10%;
+    top : 75vh;
+    right: 10vw;
     height: 110vw;
     width: 110vw;
     position : absolute;
 
     background: radial-gradient(circle, rgba(0,0,255,1) 10%, rgba(0,0,255,0) 85%);
     animation: first 6s ease-in-out infinite 0s alternate;
-    /*
-    animation-name: first;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    animation-direction: alternate;
-
-    background: rgba(173,216,230,1);
-    */
 
 }
 
 #circle2 {
-    top : 20%;
-    right : 50%;
+    top : 20vh;
+    right : 50vw;
     height: 100vw;
     width: 100vw;
     position : absolute;
@@ -150,8 +265,8 @@
 }
 
 #circle3 {
-    top : 80%;
-    left : 10%;
+    top : 80vh;
+    left : 10vw;
     height: 75vw;
     width: 75vw;
     position : absolute;
@@ -161,7 +276,7 @@
 }
 
 .blur-me {
-    filter: blur(35px);
+    filter: blur(35px); /* TODO: change from pixels? */
 }
 
  /* Body styling */

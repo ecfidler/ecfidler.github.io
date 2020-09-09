@@ -3,39 +3,145 @@
   <head>
     <meta charset="utf-8">
     <title>Ethan Fidl/er</title>
-    <meta name="description" content="I made a webpage for fun but also because there were a lot of jobs on PAL that had webdev on them and I didn't have any webdev projects">
+    <meta name="description" content="My Digital portfolio project">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="er.css">
     <script src="dark.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel='icon' href='favicon.ico' type='image/x-icon'>
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="icon/site.webmanifest">
   </head>
 
   <body>
       
-      <span class='dot centerfold blur-me' id ='circle1'></span>
-      <span class='dot blur-me' id ='circle3'></span>
-      <span class='dot blur-me' id ='circle2'></span>
+    <span class="dot centerfold blur-me" id ="circle1"></span>
+    <span class="dot blur-me" id ="circle3"></span>
+    <span class="dot blur-me" id ="circle2"></span>
 
       <header>
-    <div class='darkDiv'>
-        <h1 class ='darkstar dark' title='colorful!' onclick=colors()>?</h1>
+    <div class="question-div">
+        <h1 class ="mystery dark" title="colorful!" onclick=colors()>?</h1>
     </div>
       </header>
 
-    <div class='centerfold'>
-        <h1 class='main dark name'>Ethan Fidler</h1>
-        <div id='menuBar'><a href='about.html' title='about me'><img src="icons/at.png"
-          height="40" width="40" /></a> <a href='https://www.instagram.com/ethan_fidler/' title='instagram'><img src="icons/instagram.png"
-            height="40" width="40" /></a> <a href='https://github.com/ecfidler' title='github'><img src="icons/github.png"
-              height="40" width="40" /></a> <a href='https://open.spotify.com/playlist/7DUmnfZQNJ3PFFwHNBNhY1?si=f_U5zatVSZORuoZ1DJZKZw' title='my favorite tunes :)'><img src="icons/spotify.png"
-                height="40" width="40" /></a></div>
+    <div id="head-elements">
+
+      <div class="box" id="avatar-box">
+        <img src="icons/avatar-placeholder.png" id="avatar" title="this will eventually be a picture of me!">
+      </div>
+
+      <div class="box" id="title-box">
+        <h2 id="title-label">
+          Ethan Fidler
+        </h2>
+      </div>
+
+    <div id="body-elements">
+
+      <div class="box" id="menu-box">
+        <ul id="menu-list">
+          <li class="menu-item" onclick="setBody('home')"><p class="menu-text">Home</p></li>
+          <li class="menu-item" onclick="setBody('employment')"><p class="menu-text">Employment</p></li>
+          <li class="menu-item" onclick="setBody('projects')"><p class="menu-text">Projects</p></li>
+          <li class="menu-item" onclick="setBody('resume')"><p class="menu-text">Resume</p></li>
+          <li class="menu-item" onclick="setBody('links')"><p class="menu-text">Links</p></li>
+          <li class="menu-item" onclick="setBody('about')"><p class="menu-text">About me</p></li>
+        </ul>
+      </div>
+      
+      <div class="box main-box" id="home">
+        <h3 class="section-label">Home</h3>
+        <hr class="section-divider">
+
+        <h4 class="section-sublabel">The state of the site</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>This site is currently under construction, check back later and you'll see all of these areas filled in</p></li>
+        </ul>
+
+        <h4 class="section-sublabel">Todo / Outline</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>Employment: add raymond information.</p></li>
+          <li class="section-item"><p>Resume: add a link to my resume, direct download?</p></li>
+          <li class="section-item"><p>Links: add links to all of my worksafe socials.</p></li>
+          <li class="section-item"><p>About: write about myself outside of work.</p></li>
+          <li class="section-item"><p>Home: make this page an introduction</p></li>
+          <li class="section-item"><p>Sidebar: Add titles to all of the links?</p></li>
+          <li class="section-item"><p>Etc: update favicons, cmyk color mode?</p></li>
+        </ul>
+      </div>
+
+      <div class="box main-box" id="employment">
+        <h3 class="section-label">Employment</h3>
+        <hr class="section-divider">
+        <h4 class="section-sublabel">Some Sublabel</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>a bulletpoint</p></li>
+          <li class="section-item"><p></p></li>
+        </ul>
+      </div>
+      
+      <div class="box main-box" id="projects">
+        <h3 class="section-label">Projects</h3>
+        <hr class="section-divider">
+        <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" title="link to the project on my github">Discord.py Bot</a></h4>
+        <ul class="section-list">
+          <li class="section-item"><p>I wrote and maintain a discord bot for a server of 250+ members.</p></li>
+          <li class="section-item"><p>It is written using the discord.py library and I utilized multiple other api libraries </p></li>
+          <li class="section-item"><p>The bot has role adding functionality for members, and reverse image search functionality.</p></li>
+          <li class="section-item"><p>Functionality that works as an extension of the pinned messages feature built into discord. It takes a message sent a member of the server, formats it and highlights it in a special channel.
+          <li class="section-item"><p>There is a built in noise machine that plays a recorded soundscape into the connected Voice Channel.</p></li>
+          <li class="section-item"><p>A command that uses Reddit scraper to retrive, format, and send a random post from the specified subreddit.</p></li>
+        </ul>
+
+        <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" title="link to the project on my github">fidl.dev</a></h4>
+        <ul class="section-list">
+          <li class="section-item"><p>I personally designed and developed this website from scratch using HTML, CSS and just a touch of JavaScript</p></li>
+          <li class="section-item"><p>I will continuously be using it as a portfolio, showcasing any more projects that I work on and any Employments I hold in the future.</p></li>
+        </ul>
+
+        <h4 class="section-sublabel">Template Project</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>A third project that I participated</p></li>
+          <li class="section-item"><p>A second bulletpoint</p></li>
+        </ul>
+
+      </div>
+
+      <div class="box main-box" id="resume">
+        <h3 class="section-label">Resume</h3>
+        <hr class="section-divider">
+        <h4 class="section-sublabel">Some Sublabel</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>a bulletpoint</p></li>
+          <li class="section-item"><p></p></li>
+        </ul>
+      </div>
+
+      <div class="box main-box" id="links">
+        <h3 class="section-label">Links</h3>
+        <hr class="section-divider">
+        <h4 class="section-sublabel">Some Sublabel</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>a bulletpoint</p></li>
+          <li class="section-item"><p></p></li>
+        </ul>
+      </div>
+
+      <div class="box main-box" id="about">
+        <h3 class="section-label">About Me</h3>
+        <hr class="section-divider">
+        <h4 class="section-sublabel">Languages</h4>
+        <ul class="section-list">
+          <li class="section-item"><p>list them here</p></li>
+          <li class="section-item"><p></p></li>
+        </ul>
+      </div>
+
     </div>
 
-
+  </div>
   </body>
 
 </html>

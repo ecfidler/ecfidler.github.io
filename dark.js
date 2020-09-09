@@ -1,14 +1,11 @@
-function dark() {
-    var elements = document.getElementsByClassName('mainText');
-    for (var i = 0; i < elements.length; i++) {
-        elements.item(i).classList.toggle('dark')
+function setBody(id) {
+    // First hide all with the Id
+    var divsToHide = document.getElementsByClassName('main-box');
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = 'none';
     }
-    if (document.body.style.backgroundColor == 'black') {
-        document.body.style.backgroundColor = 'whitesmoke'
-    } else {
-        document.body.style.backgroundColor = 'black'
-    }
-    return
+
+    document.getElementById(String(id)).style.display = 'initial'
 }
 
 function shuffle(a) { // shuffle an array
@@ -19,11 +16,7 @@ function shuffle(a) { // shuffle an array
     return a;
 }
 
-function ping() { // test function
-    alert("pong")
-    return
-}
-
+// Randomizes the colors of the circles
 function colors() {
     var colorlistList = [ [0,0,255],  [255,0,0],  [0,255,0] ];
     var resultList = shuffle(colorlistList)
