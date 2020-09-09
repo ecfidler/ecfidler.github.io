@@ -153,7 +153,7 @@ a:hover {
 /* Ids for Main Body options */
 
 #home {
-    display : none;
+    display : initial;
 }
 
 #employment {
@@ -161,7 +161,7 @@ a:hover {
 }
 
 #projects {
-    display : initial;
+    display : none;
 }
 
 #resume {
