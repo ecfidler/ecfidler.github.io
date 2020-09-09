@@ -7,14 +7,26 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="er.css">
     <script src="dark.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+  <body onload="lastModified()">
       
     <span class="dot centerfold blur-me" id ="circle1"></span>
     <span class="dot blur-me" id ="circle3"></span>
@@ -44,22 +56,23 @@
 
       <div class="box" id="menu-box">
         <ul id="menu-list">
-          <li class="menu-item" onclick="setBody('home')"><p class="menu-text">Home</p></li>
-          <li class="menu-item" onclick="setBody('employment')"><p class="menu-text">Employment</p></li>
-          <li class="menu-item" onclick="setBody('projects')"><p class="menu-text">Projects</p></li>
-          <li class="menu-item" onclick="setBody('resume')"><p class="menu-text">Resume</p></li>
-          <li class="menu-item" onclick="setBody('links')"><p class="menu-text">Links</p></li>
-          <li class="menu-item" onclick="setBody('about')"><p class="menu-text">About me</p></li>
+          <li class="menu-item" title="Home page" onclick="setBody('home')"><p class="menu-text">Home</p></li>
+          <li class="menu-item" title="Employment" onclick="setBody('employment')"><p class="menu-text">Employment</p></li>
+          <li class="menu-item" title="Projects" onclick="setBody('projects')"><p class="menu-text">Projects</p></li>
+          <li class="menu-item" title="Resume" onclick="setBody('resume')"><p class="menu-text">Resume</p></li>
+          <li class="menu-item" title="Links" onclick="setBody('links')"><p class="menu-text">Links</p></li>
+          <li class="menu-item" title="About me" onclick="setBody('about')"><p class="menu-text">About me</p></li>
         </ul>
       </div>
       
+      <!-- Home Page -->
       <div class="box main-box" id="home">
         <h3 class="section-label">Home</h3>
         <hr class="section-divider">
 
         <h4 class="section-sublabel">The state of the site</h4>
         <ul class="section-list">
-          <li class="section-item"><p>This site is currently under construction, check back later and you'll see all of these areas filled in</p></li>
+          <li class="section-item"><p>This site is currently under construction, check back later (by the end of the day Thurs (9/10) at the latest) and you'll see all of these areas filled in</p></li>
         </ul>
 
         <h4 class="section-sublabel">Todo / Outline</h4>
@@ -68,25 +81,35 @@
           <li class="section-item"><p>Resume: add a link to my resume, direct download?</p></li>
           <li class="section-item"><p>Links: add links to all of my worksafe socials.</p></li>
           <li class="section-item"><p>About: write about myself outside of work.</p></li>
-          <li class="section-item"><p>Home: make this page an introduction, avatar</p></li>
+          <li class="section-item"><p>Home: make this page an introduction, avatar.</p></li>
           <li class="section-item"><p>Sidebar: Add titles to all of the links?</p></li>
           <li class="section-item"><p>Etc: update favicons, cmyk color mode?</p></li>
         </ul>
+        
+        <p id="last-label"></p>
+
       </div>
 
+      <!-- Employment -->
       <div class="box main-box" id="employment">
         <h3 class="section-label">Employment</h3>
         <hr class="section-divider">
-        <h4 class="section-sublabel">Some Sublabel</h4>
+        <h4 class="section-sublabel"><a href="https://www.raymondcorp.com/" title="Visit Raymond's website!">The Raymond Corperation</a></h4>
         <ul class="section-list">
-          <li class="section-item"><p>a bulletpoint</p></li>
-          <li class="section-item"><p></p></li>
+          <li class="section-item"><p> Software Development: Internal Tools Co-Op in Greene, NY</p></li>
+          <li class="section-item"><p>I worked on unit testing on a large C codebase  using VectorCAST/C.</p></li>
+          <li class="section-item"><p>I worked on a project for porting a large C++ mfc application to C# winforms from scratch.</p></li>
+          <li class="section-item"><p>I helped develop multiple tools that parse C++ mfc code and output the corresponding C# winforms code.</p></li>
+          <li class="section-item"><p>Worked from January 2020 - August 2020.</p></li>
         </ul>
+      
       </div>
       
+      <!-- Projects -->
       <div class="box main-box" id="projects">
         <h3 class="section-label">Projects</h3>
         <hr class="section-divider">
+
         <h4 class="section-sublabel"><a href="https://github.com/ecfidler/ecfidler.github.io" title="link to the project on my github">Discord.py Bot</a></h4>
         <ul class="section-list">
           <li class="section-item"><p>I wrote and maintain a discord bot for a server of 250+ members.</p></li>
@@ -111,34 +134,43 @@
 
       </div>
 
+      <!-- Resume -->
       <div class="box main-box" id="resume">
         <h3 class="section-label">Resume</h3>
         <hr class="section-divider">
-        <h4 class="section-sublabel">Some Sublabel</h4>
+
+        <h4 class="section-sublabel">Download</h4>
         <ul class="section-list">
-          <li class="section-item"><p>a bulletpoint</p></li>
-          <li class="section-item"><p></p></li>
+          <li class="section-item"><p>Download it <a href="https://drive.google.com/file/d/1EcGzWC6mLJJkVEnpCEabd5az8_VnN5Kl/view?usp=sharing">here!</a></p></li>
+          <li class="section-item"><p>Resume last modified September 2, 2020.</p></li>
         </ul>
+        
       </div>
 
+      <!-- Projects -->
       <div class="box main-box" id="links">
         <h3 class="section-label">Links</h3>
         <hr class="section-divider">
+
         <h4 class="section-sublabel">Some Sublabel</h4>
         <ul class="section-list">
           <li class="section-item"><p>a bulletpoint</p></li>
           <li class="section-item"><p></p></li>
         </ul>
+        
       </div>
 
+      <!-- Projects -->
       <div class="box main-box" id="about">
         <h3 class="section-label">About Me</h3>
         <hr class="section-divider">
+
         <h4 class="section-sublabel">Languages</h4>
         <ul class="section-list">
           <li class="section-item"><p>list them here</p></li>
           <li class="section-item"><p></p></li>
         </ul>
+
       </div>
 
     </div>

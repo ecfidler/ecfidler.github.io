@@ -5,7 +5,7 @@
 
 p {
     font-family : 'arial';
-    font-size : 20px;
+    font-size : 1vw; /*20px*/
     color : whitesmoke;
 
     margin-top : 0.25vh;
@@ -150,6 +150,10 @@ a:hover {
     border-radius : .25vw;
 }
 
+#last-label {
+    padding-left : 2vw;
+}
+
 /* Ids for Main Body options */
 
 #home {
@@ -276,7 +280,7 @@ a:hover {
 }
 
 .blur-me {
-    filter: blur(35px); /* TODO: change from pixels? */
+    filter: blur(1.5vw); /* TODO: change from pixels? 35px */
 }
 
  /* Body styling */

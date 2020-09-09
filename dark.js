@@ -27,3 +27,12 @@ function colors() {
     document.getElementById('circle3').style.background = 'radial-gradient(circle, rgba('+resultList[2][0]+','+resultList[2][1]+','+resultList[2][2]+',1) 15%, rgba('+resultList[2][0]+','+resultList[2][1]+','+resultList[2][2]+',0) 90%)'
 }
 
+function lastModified() {
+
+    var last = new Date(document.lastModified); 
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    var buffer = new String("Site last updated " + months[last.getMonth()] + " " + last.getDate() + ", " + last.getFullYear() + ".")
+
+    document.getElementById('last-label').innerHTML = buffer
+}
