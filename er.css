@@ -77,6 +77,7 @@ a:hover {
 
 #menu-list {
     color : whitesmoke;
+    list-style: none;
 }
 
 .menu-text {
