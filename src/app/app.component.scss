@@ -7,7 +7,7 @@ h1 {
 
 h3 {
     font-size: 2em;
-    color: #423e37;
+    color: $secondary;
     margin-bottom: .1em;
 }
 
@@ -19,7 +19,11 @@ hr {
 
 p {
     font-size: 1em;
-    color: #423e37;
+    color: $secondary;
+}
+
+ul li {
+    color: $secondary
 }
 
 .content {
