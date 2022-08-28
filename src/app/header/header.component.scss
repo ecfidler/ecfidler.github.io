@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2px;
 }
 
 .icon-border {
@@ -28,6 +29,15 @@
 
 }
 
+.icon {
+    background-color: $background;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -35,12 +45,4 @@
     to {
         transform:rotate(360deg);
     }
-}
-
-.icon {
-    background-color: $background;
-    height: 100px;
-    width: 100px;
-    z-index: 1;
-    pointer-events: none;
 }
