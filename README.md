@@ -6,4 +6,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 `ng build --configuration production`
 
-`npx ngh --dir=dist/portfolio`
+`npx ngh --dir=docs/portfolio`
