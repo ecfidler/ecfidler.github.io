@@ -1,0 +1,48 @@
+@import '../../styles.scss';
+
+.icon-boundry {
+    // background-image: conic-gradient($pink, $purple, $yellow, $pink);
+    height: 110px;
+    width: 110px;
+    position: relative;
+    overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.icon-border {
+    background-image: conic-gradient($pink, $purple, $yellow, $pink);
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.icon-border:hover {
+    animation-play-state: running;
+
+}
+
+.icon {
+    background-color: $background;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
