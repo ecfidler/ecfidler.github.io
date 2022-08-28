@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
-    "build-prod": "ng build --configuration production",
+    "build-prod": "powershell scripts/build-prod.ps1",
+    "build-man": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
