@@ -5,6 +5,9 @@ $pink: #ee4266;
 $purple: #540d6e;
 $dark-purple: #222444;
 
+$light-gradient: linear-gradient(45deg, $yellow, $pink, $purple);
+$dark-gradient: linear-gradient(95deg, $dark-purple, $purple, $pink);
+
 
 body {
     background-color: $background;
@@ -32,10 +35,17 @@ h1 {
     margin-bottom: .1em;
 }
 
-h3 {
+h2 {
+    font-size: 3em;
+    margin-bottom: .1em;
+}
+
+h3 { // subheading
     font-size: 2em;
     color: $secondary;
     margin-bottom: .1em;
+    margin-top: .1em;
+
 }
 
 hr {
@@ -44,10 +54,14 @@ hr {
     border: 0;
 }
 
-.colors img {
-    background-clip: border-box;
+img {
+    max-width: 100%;
+}
+
+.colors .img-wrap {
     background-image: inherit;
-    border: 4px solid;
+    max-width: 100%;
+    padding: 5px;
 }
 
 p {
@@ -74,12 +88,12 @@ ul li {
 }
 
 .colors.bright {
-    background-image: linear-gradient(45deg, $yellow, $pink, $purple);
+    background-image: $light-gradient;
 
 }
 
 .colors.dark {
-    background-image: linear-gradient(60deg, $dark-purple, $purple, $pink);
+    background-image: $dark-gradient;
 }
 
 .color-text {
