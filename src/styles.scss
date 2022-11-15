@@ -4,9 +4,11 @@ $yellow: #ffd23f;
 $pink: #ee4266;
 $purple: #540d6e;
 $dark-purple: #222444;
+$blue: #222999;
 
 $light-gradient: linear-gradient(45deg, $yellow, $pink, $purple);
 $dark-gradient: linear-gradient(95deg, $dark-purple, $purple, $pink);
+$blue-gradient: linear-gradient(60deg, $blue, $dark-purple, $purple, $pink);
 
 
 body {
@@ -102,6 +104,10 @@ ul li {
 
 .colors.dark {
     background-image: $dark-gradient;
+}
+
+.colors.blue {
+    background-image: $blue-gradient,
 }
 
 .color-text {

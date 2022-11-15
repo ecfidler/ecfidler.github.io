@@ -9,6 +9,7 @@ import { Project1Component } from './project1/project1.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { Project2Component } from './project2/project2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     Project1Component,
     HomeComponent,
     PageNotFoundComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    Project2Component
   ],
   imports: [
     BrowserModule,
