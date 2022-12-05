@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { Project2Component } from './project2/project2.component';
+import { Project3Component } from './project3/project3.component';
+import { PictureFrameComponent } from './picture-frame/picture-frame.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { Project2Component } from './project2/project2.component';
     HomeComponent,
     PageNotFoundComponent,
     ScrollToTopComponent,
-    Project2Component
+    Project2Component,
+    Project3Component,
+    PictureFrameComponent
   ],
   imports: [
     BrowserModule,
