@@ -1,0 +1,29 @@
+$creme: #F9EBD2;
+$black: #2a2a2a;
+$white: #E9E9E9;
+
+$ecf: hsl(280, 100%, 90%); // e3daff, d685ff
+$violet: #845a6d;
+
+.body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#name {
+    color: $ecf;
+    font-size: 256pt;
+    text-shadow: 10px 10px 0px hsl(280, 100%, 80%), 20px 20px 0px hsl(280, 100%, 70%), 0px 0px 100px $creme, 0px 0px 100px $creme, 0px 0px 100px $creme, 20px 20px 100px $creme, 20px 20px 100px $creme, 20px 20px 100px $creme;
+    position: absolute;
+}
+
+#backdrop {
+    color: #C0C0C0;
+    opacity: 1;
+    font-size: 1.5em;
+    overflow: hidden;
+    transform: scale(2.0) rotate(-30deg);
+}

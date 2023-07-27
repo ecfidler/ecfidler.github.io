@@ -1,0 +1,132 @@
+$background: gainsboro;
+$secondary: #423e37;
+$yellow: #ffd23f;
+$pink: #ee4266;
+$purple: #540d6e;
+$dark-purple: #222444;
+$blue: #222999;
+
+$light-gradient: linear-gradient(45deg, $yellow, $pink, $purple);
+$dark-gradient: linear-gradient(95deg, $dark-purple, $purple, $pink);
+$blue-gradient: linear-gradient(60deg, $blue, $dark-purple, $purple, $pink);
+$uc-gradient: linear-gradient(60deg, rgba(0,0,0,1) 0%, rgba(240,0,0,1) 100%);
+
+a {
+    // text-decoration: underline;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-decoration-color: transparent;
+    cursor: pointer;
+}
+
+a:hover {
+    font-style: italic;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+// pulled from old app.component.scss
+
+h1 {
+    font-size: 4em;
+    margin-bottom: .1em;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: .1em;
+}
+
+h3 { // subheading
+    font-size: 2em;
+    color: $secondary;
+    margin-bottom: .1em;
+    margin-top: .1em;
+
+}
+
+hr {
+    background-image: inherit;
+    height: 2px;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.colors .img-wrap {
+    background-image: inherit;
+    max-width: 100%;
+    // width: auto;
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 2px;
+}
+
+app-picture-frame {
+    background-image: inherit;
+}
+
+.colors app-picture-frame .img-wrap {
+    background-image: inherit;
+    max-width: 100%;
+    // width: auto;
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 2px;
+}
+
+.video-wrap {
+    max-width: 100%;
+    padding-bottom: 62.5%;
+}
+
+p {
+    font-size: 1em;
+    color: $secondary;
+}
+
+ul li {
+    color: $secondary
+}
+
+.content {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+.colors {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.colors.bright {
+    background-image: $light-gradient;
+
+}
+
+.colors.dark {
+    background-image: $dark-gradient;
+}
+
+.colors.blue {
+    background-image: $blue-gradient,
+}
+
+.colors.uc {
+    background-image: $uc-gradient,
+}
+
+.color-text {
+    -webkit-text-fill-color: transparent; 
+    text-decoration-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.content ul li:hover {
+    text-decoration-color: transparent;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
