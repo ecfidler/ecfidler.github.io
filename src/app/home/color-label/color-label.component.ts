@@ -9,6 +9,12 @@ export class ColorLabelComponent implements OnInit {
 
   @Input() color = "#000";
 
+  hover = false;
+
+  colorString() {
+    return `#${this.color}`
+  }
+
   constructor() { }
 
   ngOnInit(): void {
