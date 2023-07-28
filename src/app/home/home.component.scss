@@ -19,6 +19,7 @@ $violet: #845a6d;
     font-size: 256pt;
     text-shadow: 10px 10px 0px hsl(280, 100%, 80%), 20px 20px 0px hsl(280, 100%, 70%), 0px 0px 100px $creme, 0px 0px 100px $creme, 0px 0px 100px $creme, 20px 20px 100px $creme, 20px 20px 100px $creme, 20px 20px 100px $creme;
     position: absolute;
+    user-select: none;
 }
 
 #backdrop {

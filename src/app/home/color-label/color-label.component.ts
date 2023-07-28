@@ -12,7 +12,7 @@ export class ColorLabelComponent implements OnInit {
   hover = false;
 
   colorString() {
-    return `#${this.color}`
+    return `${this.color}`
   }
 
   constructor() { }

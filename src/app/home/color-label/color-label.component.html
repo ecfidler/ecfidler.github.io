@@ -1,1 +1,1 @@
-<span (mouseover)="hover=true" (mouseleave)="hover=false" [ngStyle]="{color: hover==true ? colorString() : '#C0C0C0'}" [style.color]="colorString()">#{{color}}</span>
+<span (mouseover)="hover=true" (mouseleave)="hover=false" style="user-select: none;" [ngStyle]="{color: hover==true ? colorString() : '#C0C0C0'}" [style.color]="colorString()">{{color}}&#20; &nbsp;</span>
