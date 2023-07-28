@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as data from '../../assets/colors.json';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  colors = Object.values(data).map(e => e.hex);
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.colors);
   }
 
 }
